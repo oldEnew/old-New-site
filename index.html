@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old&New - Associação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #002a5e;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #002a5e;
+      margin-bottom: 1rem;
+    }
+    .sobre {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .membros, .eventos, .loja {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.8rem;
+      background-color: #002a5e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004080;
+    }
+    footer {
+      background: #002a5e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Old&New - EPCAR & AFA Futebol</h1>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre a Associação</h2>
+    <p>Associação de militares e ex-militares que passaram pela EPCAR e AFA e integraram as equipes de futebol. A associação promove a união entre gerações, o espírito esportivo e a valorização das tradições.</p>
+    <img src="img/fotos-equipe.jpg" alt="Fotos da equipe antiga e atual" style="width:100%; max-width:600px; border-radius: 8px;">
+  </section>
+
+  <section>
+    <h2>Membros</h2>
+    <div class="membros">
+      <div class="card">
+        <img src="img/avatar1.jpg" alt="Carlos Silva">
+        <strong>Carlos Silva</strong><br />EPCAR 67, AFA 2001<br />Atacante
+      </div>
+      <div class="card">
+        <img src="img/avatar2.jpg" alt="Rodrigo Almeida">
+        <strong>Rodrigo Almeida</strong><br />EPCAR 98<br />Meio-campo
+      </div>
+      <!-- Adicione mais membros aqui -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Eventos</h2>
+    <div class="eventos">
+      <div class="card">
+        <img src="img/evento1.jpg" alt="Evento 1">
+        <strong>Encontro Anual 2024</strong><br />Barbacena, MG
+      </div>
+      <div class="card">
+        <img src="img/evento2.jpg" alt="Evento 2">
+        <strong>Jogo Comemorativo</strong><br />Pirassununga, SP
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Loja</h2>
+    <div class="loja">
+      <div class="card">
+        <img src="img/camisa.jpg" alt="Camisa Comemorativa">
+        <strong>Camisa Comemorativa</strong><br />R$ 79,90
+      </div>
+      <div class="card">
+        <img src="img/bone.jpg" alt="Boné">
+        <strong>Boné Old&New</strong><br />R$ 39,90
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Nome" required />
+      <input type="email" placeholder="E-mail" required />
+      <textarea rows="5" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Área do Membro</h2>
+    <form>
+      <input type="text" placeholder="Usuário" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Old&New. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
